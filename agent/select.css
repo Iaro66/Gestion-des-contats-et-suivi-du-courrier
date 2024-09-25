@@ -1,0 +1,36 @@
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select select {
+    display: none; 
+}
+
+.select-selected {
+    background-color: #f1f1f1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    z-index: 99;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.select-items div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.select-items div:hover {
+    background-color: #ddd;
+}
+

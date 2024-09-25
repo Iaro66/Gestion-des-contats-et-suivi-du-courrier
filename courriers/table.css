@@ -1,0 +1,128 @@
+table-section-1 {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #eef6ff;
+}
+
+button {
+    padding: 6px 12px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button.transferer-btn {
+    background-color: #28a745;
+}
+
+button.classer-btn {
+    background-color: #ffc107;
+}
+
+button.archiver-btn {
+    background-color: #dc3545;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .search-bar {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    th {
+        text-align: right;
+        padding-right: 10px;
+        background: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    td {
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+
+    .search-bar {
+        margin-bottom: 15px;
+    }
+}
